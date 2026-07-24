@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  lb:
+    image: haproxy:2.8
+    ports:
+      - "80:80"
+
+  app1:
+    image: webapp:v1
+    environment:
+      - INSTANCE=1
+
+  app2:
+    image: webapp:v1
+    environment:
+      - INSTANCE=2
+
+  app3:
+    image: webapp:v1
+    environment:
+      - INSTANCE=3
+
+  cron-job:
+    image: worker:v1
+    command: cron -f
+
+  mail-server:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3001:3000"
+
+  db-main:
+    image: postgres:15
+
+  db-replica:
+    image: postgres:15

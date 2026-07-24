@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  ingress:
+    image: traefik:v2.10
+    ports:
+      - "80:80"
+      - "8080:8080"
+
+  user-api:
+    image: company/user-api:3.1
+    environment:
+      - PORT=3000
+
+  product-api:
+    image: company/product-api:1.2
+    environment:
+      - PORT=3001
+
+  cart-api:
+    image: company/cart-api:2.0
+    environment:
+      - PORT=3002
+
+  payment-api:
+    image: company/payment-api:1.0
+    environment:
+      - PORT=3003
+
+  shipping-api:
+    image: company/shipping-api:1.1
+    environment:
+      - PORT=3004
+
+  recommendation-api:
+    image: company/recommendation-api:4.0
+
+  search-api:
+    image: company/search-api:2.2
+
+  postgres-primary:
+    image: postgres:15
+
+  postgres-standby:
+    image: postgres:15
+
+  redis-cluster-1:
+    image: redis:7
+
+  redis-cluster-2:
+    image: redis:7

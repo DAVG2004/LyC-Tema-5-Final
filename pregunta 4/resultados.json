@@ -1,0 +1,272 @@
+[
+  {
+    "file": "docker-compose-01.yml",
+    "size_bytes": 84,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.15415,
+        "std_ms": 0.08519,
+        "min_ms": 0.1218,
+        "max_ms": 0.6691,
+        "ops_per_sec": 6487.27
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.15301,
+        "std_ms": 0.02316,
+        "min_ms": 0.1296,
+        "max_ms": 0.229,
+        "ops_per_sec": 6535.35
+      },
+      "PyYAML AST": {
+        "mean_ms": 0.72844,
+        "std_ms": 0.24737,
+        "min_ms": 0.5901,
+        "max_ms": 2.1245,
+        "ops_per_sec": 1372.8
+      }
+    }
+  },
+  {
+    "file": "docker-compose-02.yml",
+    "size_bytes": 331,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.32161,
+        "std_ms": 0.41925,
+        "min_ms": 0.1439,
+        "max_ms": 2.9008,
+        "ops_per_sec": 3109.36
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.26092,
+        "std_ms": 0.16182,
+        "min_ms": 0.1535,
+        "max_ms": 0.9755,
+        "ops_per_sec": 3832.53
+      },
+      "PyYAML AST": {
+        "mean_ms": 1.8748,
+        "std_ms": 0.42997,
+        "min_ms": 1.466,
+        "max_ms": 3.4782,
+        "ops_per_sec": 533.39
+      }
+    }
+  },
+  {
+    "file": "docker-compose-03.yml",
+    "size_bytes": 656,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.18849,
+        "std_ms": 0.04659,
+        "min_ms": 0.1491,
+        "max_ms": 0.4661,
+        "ops_per_sec": 5305.26
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.23326,
+        "std_ms": 0.04782,
+        "min_ms": 0.1785,
+        "max_ms": 0.4087,
+        "ops_per_sec": 4287.1
+      },
+      "PyYAML AST": {
+        "mean_ms": 2.86727,
+        "std_ms": 0.44768,
+        "min_ms": 2.305,
+        "max_ms": 4.1088,
+        "ops_per_sec": 348.76
+      }
+    }
+  },
+  {
+    "file": "docker-compose-04.yml",
+    "size_bytes": 505,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.18083,
+        "std_ms": 0.08143,
+        "min_ms": 0.144,
+        "max_ms": 0.6796,
+        "ops_per_sec": 5529.93
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.21514,
+        "std_ms": 0.03135,
+        "min_ms": 0.1745,
+        "max_ms": 0.295,
+        "ops_per_sec": 4648.14
+      },
+      "PyYAML AST": {
+        "mean_ms": 2.52452,
+        "std_ms": 0.5102,
+        "min_ms": 2.0752,
+        "max_ms": 4.4757,
+        "ops_per_sec": 396.12
+      }
+    }
+  },
+  {
+    "file": "docker-compose-05.yml",
+    "size_bytes": 503,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.18627,
+        "std_ms": 0.06375,
+        "min_ms": 0.1466,
+        "max_ms": 0.5096,
+        "ops_per_sec": 5368.61
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.18994,
+        "std_ms": 0.02365,
+        "min_ms": 0.1695,
+        "max_ms": 0.2822,
+        "ops_per_sec": 5264.77
+      },
+      "PyYAML AST": {
+        "mean_ms": 2.91117,
+        "std_ms": 0.83623,
+        "min_ms": 2.1059,
+        "max_ms": 6.2014,
+        "ops_per_sec": 343.5
+      }
+    }
+  },
+  {
+    "file": "docker-compose-06.yml",
+    "size_bytes": 766,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.21693,
+        "std_ms": 0.20038,
+        "min_ms": 0.1565,
+        "max_ms": 1.5919,
+        "ops_per_sec": 4609.78
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.26845,
+        "std_ms": 0.2006,
+        "min_ms": 0.1886,
+        "max_ms": 1.6255,
+        "ops_per_sec": 3725.06
+      },
+      "PyYAML AST": {
+        "mean_ms": 3.67759,
+        "std_ms": 0.43539,
+        "min_ms": 3.1244,
+        "max_ms": 4.8826,
+        "ops_per_sec": 271.92
+      }
+    }
+  },
+  {
+    "file": "docker-compose-07.yml",
+    "size_bytes": 804,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.18474,
+        "std_ms": 0.03247,
+        "min_ms": 0.1583,
+        "max_ms": 0.2857,
+        "ops_per_sec": 5413.07
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.23754,
+        "std_ms": 0.07629,
+        "min_ms": 0.1868,
+        "max_ms": 0.6672,
+        "ops_per_sec": 4209.78
+      },
+      "PyYAML AST": {
+        "mean_ms": 2.99986,
+        "std_ms": 0.4447,
+        "min_ms": 2.602,
+        "max_ms": 4.3438,
+        "ops_per_sec": 333.35
+      }
+    }
+  },
+  {
+    "file": "docker-compose-08.yml",
+    "size_bytes": 625,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.23502,
+        "std_ms": 0.17268,
+        "min_ms": 0.1713,
+        "max_ms": 1.3785,
+        "ops_per_sec": 4255.03
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.30756,
+        "std_ms": 0.2138,
+        "min_ms": 0.1957,
+        "max_ms": 1.4622,
+        "ops_per_sec": 3251.36
+      },
+      "PyYAML AST": {
+        "mean_ms": 3.08618,
+        "std_ms": 0.57672,
+        "min_ms": 2.5709,
+        "max_ms": 5.2417,
+        "ops_per_sec": 324.03
+      }
+    }
+  },
+  {
+    "file": "docker-compose-09.yml",
+    "size_bytes": 809,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.22647,
+        "std_ms": 0.17088,
+        "min_ms": 0.1591,
+        "max_ms": 1.3664,
+        "ops_per_sec": 4415.67
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.22089,
+        "std_ms": 0.06062,
+        "min_ms": 0.1898,
+        "max_ms": 0.5318,
+        "ops_per_sec": 4527.06
+      },
+      "PyYAML AST": {
+        "mean_ms": 3.28781,
+        "std_ms": 0.50754,
+        "min_ms": 2.7859,
+        "max_ms": 4.8893,
+        "ops_per_sec": 304.15
+      }
+    }
+  },
+  {
+    "file": "docker-compose-10.yml",
+    "size_bytes": 970,
+    "results": {
+      "Lark LALR(1)": {
+        "mean_ms": 0.17085,
+        "std_ms": 0.02255,
+        "min_ms": 0.1582,
+        "max_ms": 0.2527,
+        "ops_per_sec": 5853.02
+      },
+      "Recursive Descent": {
+        "mean_ms": 0.24418,
+        "std_ms": 0.09633,
+        "min_ms": 0.1874,
+        "max_ms": 0.8217,
+        "ops_per_sec": 4095.27
+      },
+      "PyYAML AST": {
+        "mean_ms": 3.42043,
+        "std_ms": 0.45266,
+        "min_ms": 2.9084,
+        "max_ms": 4.7379,
+        "ops_per_sec": 292.36
+      }
+    }
+  }
+]

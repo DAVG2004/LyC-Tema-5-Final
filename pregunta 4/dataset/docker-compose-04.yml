@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  gateway:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - frontend_net
+      - backend_net
+
+  web:
+    image: mycompany/webapp:1.4
+    networks:
+      - frontend_net
+      - backend_net
+
+  api:
+    image: mycompany/api:2.0
+    networks:
+      - backend_net
+      - db_net
+    environment:
+      REDIS_HOST: redis
+
+  cache:
+    image: redis:7-alpine
+    networks:
+      - backend_net
+
+networks:
+  frontend_net:
+  backend_net:
+  db_net:

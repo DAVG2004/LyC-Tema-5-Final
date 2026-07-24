@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+
+  service-a:
+    image: microservice-a:1.0
+    environment:
+      - VIRTUAL_HOST=a.example.com
+      - PORT=8080
+
+  service-b:
+    image: microservice-b:1.0
+    environment:
+      - VIRTUAL_HOST=b.example.com
+      - PORT=8081
+
+  service-c:
+    image: microservice-c:1.0
+    environment:
+      - VIRTUAL_HOST=c.example.com
+      - PORT=8082
+
+  service-d:
+    image: microservice-d:1.0
+    environment:
+      - VIRTUAL_HOST=d.example.com
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+
+  elasticsearch:
+    image: elasticsearch:8.8.0
+    environment:
+      - discovery.type=single-node
+
+  kibana:
+    image: kibana:8.8.0
+    ports:
+      - "5601:5601"
