@@ -73,6 +73,9 @@ pip install numpy matplotlib lark-parser pyyaml
 
 ---
 
-## 👥 Autores
+## 👥 Autores / Integrantes
 *   **Alexmary Ramírez** - [alexmaryram.2005@gmail.com](mailto:alexmaryram.2005@gmail.com)
 *   **Daniel Vallenilla (DAVG2004)** - [vallenilladaniel1@gmail.com](mailto:vallenilladaniel1@gmail.com)
+*   **Robert Castro**
+*   **Endrys Flores**
+
